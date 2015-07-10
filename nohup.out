@@ -1,0 +1,26 @@
+Listening for transport dt_socket at address: 5600
+sun.misc.ServiceConfigurationError: com.sun.jdi.connect.Connector: Provider com.sun.tools.jdi.SharedMemoryAttachingConnector not found
+sun.misc.ServiceConfigurationError: com.sun.jdi.connect.Connector: Provider com.sun.tools.jdi.SharedMemoryListeningConnector not found
+sun.misc.ServiceConfigurationError: com.sun.tools.attach.spi.AttachProvider: Provider sun.tools.attach.WindowsAttachProvider not found
+debug connected
+Exception in thread "main" javax.jms.JMSException: Failover timeout of 10000 ms reached.
+	at org.apache.activemq.util.JMSExceptionSupport.create(JMSExceptionSupport.java:62)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1395)
+	at org.apache.activemq.ActiveMQConnection.ensureConnectionInfoSent(ActiveMQConnection.java:1481)
+	at org.apache.activemq.ActiveMQConnection.start(ActiveMQConnection.java:516)
+	at com.alibaba.aui.amq.MQConnectionFactory.getAdminSession(MQConnectionFactory.java:19)
+	at com.alibaba.aui.amq.CaseResultSend.init(CaseResultSend.java:20)
+	at com.alibaba.aui.AUITray.main(AUITray.java:216)
+Caused by: java.io.IOException: Failover timeout of 10000 ms reached.
+	at org.apache.activemq.transport.failover.FailoverTransport.oneway(FailoverTransport.java:618)
+	at org.apache.activemq.transport.MutexTransport.oneway(MutexTransport.java:68)
+	at org.apache.activemq.transport.ResponseCorrelator.asyncRequest(ResponseCorrelator.java:81)
+	at org.apache.activemq.transport.ResponseCorrelator.request(ResponseCorrelator.java:86)
+	at org.apache.activemq.ActiveMQConnection.syncSendPacket(ActiveMQConnection.java:1366)
+	... 5 more
+Listening for transport dt_socket at address: 5600
+Listening for transport dt_socket at address: 5600
+sun.misc.ServiceConfigurationError: com.sun.jdi.connect.Connector: Provider com.sun.tools.jdi.SharedMemoryAttachingConnector not found
+sun.misc.ServiceConfigurationError: com.sun.jdi.connect.Connector: Provider com.sun.tools.jdi.SharedMemoryListeningConnector not found
+sun.misc.ServiceConfigurationError: com.sun.tools.attach.spi.AttachProvider: Provider sun.tools.attach.WindowsAttachProvider not found
+debug connected
